@@ -1,7 +1,7 @@
 import requests, random, ujson
 
 
-def get_suggests(user_storage):
+def get_suggests(user_storage = {}):
     if "suggests" in user_storage.keys():
         suggests = []
         for suggest in user_storage["suggests"]:
